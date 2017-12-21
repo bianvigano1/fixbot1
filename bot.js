@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-Client.on("ready", () => {
+client.on("ready", () => {
 	console.log('online');
-	Client.user.setPresence({ game: { name: `Hello world`, type: 0} });
+	client.user.setPresence({ game: { name: `Hello world`, type: 0} });
 });
 
 var prefix = ">."
